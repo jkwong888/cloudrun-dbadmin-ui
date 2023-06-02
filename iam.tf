@@ -1,7 +1,4 @@
-resource "google_service_account" "redisinsight_sa" {
-  project       = module.service_project.project_id
-  account_id    = "redisinsight-sa"
-}
+
 
 
 # take the GKE SA and allow storage object browser on the image registry bucket

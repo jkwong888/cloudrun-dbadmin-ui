@@ -70,10 +70,14 @@ variable "db_instance_type" {
   default = "db-custom-2-8192"
 }
 
-variable "google_oauth_client_id" {
+variable "google_iap_email" {
   default = ""
 }
 
 variable "google_oauth_client_secret" {
+  default = ""
+}
+
+variable "redisinsight_image" {
   default = ""
 }

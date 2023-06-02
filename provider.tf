@@ -36,3 +36,10 @@ provider "null" {
 
 provider "random" {
 }
+
+
+data "google_client_config" "client_config" {
+}
+
+data "google_client_openid_userinfo" "me" {
+}
