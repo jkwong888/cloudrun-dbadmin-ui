@@ -7,3 +7,4 @@ resource "google_project_iam_member" "vpc_connector_use" {
     role    = "roles/vpcaccess.user"
     member  = "serviceAccount:service-${module.service_project.number}@serverless-robot-prod.iam.gserviceaccount.com"
 }
+

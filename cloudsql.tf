@@ -54,13 +54,11 @@ resource "random_password" "postgres_password" {
   override_special = "_%@"
 }
 
-/*
 resource "google_project_iam_member" "project" {
   project = module.service_project.project_id
   role    = "roles/cloudsql.client"
-  member = format("serviceAccount:%s", google_service_account.db_sa.email)
+  member = format("serviceAccount:%s", google_service_account.pgadmin_sa.email)
 }
-*/
 
 
 /*
@@ -115,3 +113,4 @@ resource "google_secret_manager_secret_version" "cloudsql_password" {
 
 
 }
+

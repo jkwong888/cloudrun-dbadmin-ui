@@ -81,3 +81,7 @@ variable "google_oauth_client_secret" {
 variable "redisinsight_image" {
   default = ""
 }
+
+variable "pgadmin_image" {
+  default = ""
+}
